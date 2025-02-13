@@ -12,7 +12,7 @@ Emergency Reporter is a web application that reports and manages emergency incid
 1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/emergency-reporter.git
-    cd emergency-reporter
+    cd vscode
     ```
 2. Install the dependencies:
     ```sh
