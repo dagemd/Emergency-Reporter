@@ -22,7 +22,7 @@ Emergency Reporter is a web application that reports and manages emergency incid
 ## Running the Application
 To start the development server, run:
 ```sh
-npm start
+npm run dev
 ```
 
 ## Usage
