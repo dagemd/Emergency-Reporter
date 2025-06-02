@@ -8,11 +8,11 @@ Emergency Reporter is a web application that reports and manages emergency incid
 - [Usage](#usage)
 - [Team Members](#team-members)
 
-## Installation
+## Installation for Ubuntu, Linux (For windows, use '\' instead of /)
 1. Clone the repository:
     ```sh
     git clone https://github.com/dagemd/emergency-reporter.git
-    cd vscode
+    cd emergency-reporter/vscode
     ```
 2. Install the dependencies:
     ```sh
