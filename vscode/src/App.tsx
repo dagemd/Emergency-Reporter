@@ -69,7 +69,7 @@ function latLngToString(location: L.LatLng) {
     axios.get(`https://nominatim.openstreetmap.org/reverse?lat=${location.lat}&lon=${location.lng}&format=json`, { timeout: 9000 })
       .then(function (response) {
         let stringName = response.data['name'];
-        localStorage.set(`location=${location.lat}, ${location.lng}`, stringName);
+        localStorage.setItem(`location=${location.lat}, ${location.lng}`, stringName);
         successFunc(stringName);
       })
       .catch(function (error) {
@@ -82,7 +82,7 @@ function latLngToString(location: L.LatLng) {
 
 function stringToLatLng(strLoc: string): Promise<L.LatLng> {
   let promise = new Promise<L.LatLng>((successFunc, errorFunc) => {
-    let cachedValue = localStorage.get(`namedLocation=${strLoc}`);
+    let cachedValue = localStorage.getItem(`namedLocation=${strLoc}`);
     if (cachedValue) {
       let splitValue = cachedValue.split(',');
       let latLong = new L.LatLng(+splitValue[0].trim(), +splitValue[1].trim());
@@ -93,7 +93,7 @@ function stringToLatLng(strLoc: string): Promise<L.LatLng> {
     axios.get(`https://nominatim.openstreetmap.org/search?format=json&q=${strLoc}`, { timeout: 9000 })
       .then(function (response) {
         let latLong = new L.LatLng(+response.data[0]['lat'], +response.data[0]['lon']);
-        localStorage.set(`namedLocation=${strLoc}`, `${latLong.lat}, ${latLong.lng}`);
+        localStorage.setItem(`namedLocation=${strLoc}`, `${latLong.lat}, ${latLong.lng}`);
         successFunc(latLong);
       })
       .catch(function (error) {
