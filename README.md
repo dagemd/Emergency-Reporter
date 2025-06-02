@@ -11,7 +11,7 @@ Emergency Reporter is a web application that reports and manages emergency incid
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/emergency-reporter.git
+    git clone https://github.com/dagemd/emergency-reporter.git
     cd vscode
     ```
 2. Install the dependencies:
