@@ -8,7 +8,7 @@ Emergency Reporter is a web application that reports and manages emergency incid
 - [Usage](#usage)
 - [Team Members](#team-members)
 
-## Installation for Ubuntu, Linux (For windows, use '\' instead of /)
+## Installation for Ubuntu, Linux (For Windows, use '\' instead of /)
 1. Clone the repository:
     ```sh
     git clone https://github.com/dagemd/emergency-reporter.git
@@ -27,15 +27,15 @@ npm run dev
 
 ## Usage
 ```sh
-1. Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal).
+1. Open your browser and navigate to the ports specified in your terminal.
 
 2. The main page will display a map and a list of reports.
 
 3. To add a new report, click on the "Add Report" button at the bottom of the report list. Fill in the required details and submit the form.
 
-4. To view a report, click on a report item in the list. A popup will appear with the report details.
+4. To view a report, click on a report item in the list. A pop-up will appear with the report details.
 
-5. To change the status of a report, click the "Change" button in the report details popup. You will be prompted to enter a password. The default password is `admin`.
+5. To change the status of a report, click the "Change" button in the report details pop-up. You will be prompted to enter a password. The default password is `admin`.
 
 6. To delete a report, click the "X" button next to the report item in the list. You will be prompted to enter a password. The default password is `admin`.
 ```
